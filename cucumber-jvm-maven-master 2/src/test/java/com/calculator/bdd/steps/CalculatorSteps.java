@@ -1,6 +1,7 @@
 package com.calculator.bdd.steps;
 
 import cucumber.api.java.Before;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -13,6 +14,7 @@ import cucumber.api.java.After;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
+import java.io.IOException;
 import java.net.URL;
 
 import org.openqa.selenium.By;
@@ -27,14 +29,20 @@ public class CalculatorSteps {
 
     private Calculator calculator;
     protected DesiredCapabilities capabilities;
-    protected AppiumDriver<WebElement> driver;
+    public AppiumDriver<IOSElement> driver;
     protected WebDriverWait wait;
-    
     
     @Before
     public void setUp() {
-   // 	System("killall -e Calculator");
-        calculator = new Calculator();
+
+    	Runtime rt = Runtime.getRuntime();
+    	try {
+			rt.exec("killall -9 " +"Calculator");
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+    	calculator = new Calculator();
         
         /* key piece of code as we are connecting to local Appium Server running over 127.0.0.1 with port 4622
          * The port was specified while compiling the codebase of Appium-for-Mac
@@ -47,8 +55,6 @@ public class CalculatorSteps {
         capabilities.setCapability("platformVersion", "10.13.2");
         capabilities.setCapability("deviceName", "mac");
         capabilities.setCapability("app", "/Applications/Calculator.app");
-       // capabilities.setCapability(MobileCapabilityType.NO_RESET, "True");
-     //   capabilities.setCapability("autolaunch", "False");
         try {
 
 		/* Since we need to connect to Appium-for-Mac, so we need to create an object of AppiumDriver class
@@ -56,11 +62,9 @@ public class CalculatorSteps {
 		 * In order to test if Appium server is running/listening on 4622 port, try opening following URL in web browser
 		 */
 			
-			AppiumDriver<IOSElement> driver = new io.appium.java_client.ios.IOSDriver<IOSElement>(new URL("http://127.0.0.1:4622/wd/hub"), capabilities);	
+			driver = new io.appium.java_client.ios.IOSDriver<IOSElement>(new URL("http://127.0.0.1:4622/wd/hub"), capabilities);	
 			// launch calculator application
 			driver.get("/Applications/Calculator.app");
-			
-			System.out.println("Calculator... laucnhed...");
 			
 		} catch (Exception e) {
 			System.out.println("\n ------- Unable to launch Calculator with Appium");
@@ -362,11 +366,18 @@ public class CalculatorSteps {
        // throw new PendingException();
     }
     
+    @And("^close Calculator Application$")
+    public void Close_Calculator() throws Throwable {
+    		
+    }
+    
     @After
     public void Teardown()
     {
-  //  driver.closeApp();
+   // driver.closeApp();
  //driver.quit();
     
     }
+    
+ 
 }
