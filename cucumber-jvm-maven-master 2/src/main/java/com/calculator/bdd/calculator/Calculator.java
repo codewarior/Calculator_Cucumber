@@ -32,7 +32,11 @@ public class Calculator {
      public void Unified_Method(double arg1, double arg2, String Operand) throws MalformedURLException {
 
     	 	driver = new io.appium.java_client.ios.IOSDriver<IOSElement>(new URL("http://127.0.0.1:4622/wd/hub"), new DesiredCapabilities());
-        // clear the result screen before performing any operation
+    	 	// Click View -> Basic menu item so that calculator is in Basic mode before any operation is performed
+    	 	IOSElement Cal_View = (IOSElement)driver.findElement(By.xpath("/AXApplication[@AXTitle='Calculator']/AXMenuBar[0]/AXMenuBarItem[@AXTitle='View']/AXMenu[0]/AXMenuItem[@AXTitle='Basic']"));
+    	 	Cal_View.click();
+    	 	
+    	 	// clear the result screen before performing any operation
         Click_Operand_Through_Description("clear");
         // create an array of arguments passed to method
         double[] input_arguments = {arg1, arg2};
