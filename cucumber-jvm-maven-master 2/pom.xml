@@ -39,7 +39,7 @@
                 <configuration>
                     <includePluginDependencies>true</includePluginDependencies>
                     <executable>maven</executable>
-                    <mainClass>com.xvpn.test.GenerateReports</mainClass>
+                    <mainClass>com.calculator.bdd.runner.CalculatorSteps</mainClass>
                     <classpathScope>test</classpathScope>
                 </configuration>
             </plugin>
