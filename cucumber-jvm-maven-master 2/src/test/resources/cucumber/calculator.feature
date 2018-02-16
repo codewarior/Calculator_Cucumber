@@ -4,7 +4,7 @@ Feature: Calculator
   So that I don't need to perform calculations myself
 
 
-# ============= following test cases are related to ADDITION feature of calculator application. =================== #
+# ====== Test cases related to ADDITION feature ========= #
 
    Scenario Outline: Add two numbers
     Given I have a calculator
@@ -24,6 +24,8 @@ Examples: Data set for Addition scenarios
     |	-196.7	|	0.9		|	-195.8	|
     |	-155.6	|	-987.9	|	-1143.5	|
 
+# ====== Test cases related to SUBTRACTION feature ========= #
+
    Scenario Outline: Subtract two numbers
     Given I have a calculator
     When I have <Operand_1> and Subtract <Operand_2>
@@ -42,6 +44,8 @@ Examples: Data set for Subtraction operations
     |	-45.2	|	747.9	|	-793.1	|
     |	-1001.4	|	-9047.6	|	8046.2	|
     
+# ====== Test cases related to MULTIPLICATION feature ========= #
+
    Scenario Outline: Multiply two numbers
     Given I have a calculator
     When I Multiply <Operand_1> with <Operand_2>
@@ -60,6 +64,8 @@ Examples: Data set for Multiplication operations
     |	-76.2	|	72.1		|	-5494.02	|
     |	-33.1	|	-78.7	|	2604.97	|
     
+# ====== Test cases related to DIVISION feature ========= #
+
   Scenario Outline: Divide two numbers
     Given I have a calculator
     When I Divide <Operand_1> by <Operand_2>
