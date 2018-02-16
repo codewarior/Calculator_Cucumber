@@ -5,36 +5,20 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.ios.IOSElement;
-import io.appium.java_client.remote.MobileCapabilityType;
-import cucumber.api.PendingException;
 import cucumber.api.java.After;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
-
 import java.io.IOException;
-import java.net.URL;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import com.calculator.bdd.calculator.Calculator;
 
 public class CalculatorSteps {
 
     private Calculator calculator;
-    protected DesiredCapabilities capabilities;
-    public AppiumDriver<IOSElement> driver;
-    protected WebDriverWait wait;
     
     @Before
     public void setUp() {
 
+    	// kill any existing instance of Calculator application
     	Runtime rt = Runtime.getRuntime();
     	try {
 			rt.exec("killall -9 " +"Calculator");
@@ -43,32 +27,8 @@ public class CalculatorSteps {
 			e1.printStackTrace();
 		}
     	calculator = new Calculator();
+    calculator.init();   
         
-        /* key piece of code as we are connecting to local Appium Server running over 127.0.0.1 with port 4622
-         * The port was specified while compiling the codebase of Appium-for-Mac
-         * Since the test is on local MAC machine, so platform_name is set as MAC.*/
-
-    	    /*In following code lines we are specifying the desired capabilities required by Appium server*/
-        capabilities = new DesiredCapabilities();
-        capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
-        capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "mac");
-        capabilities.setCapability("platformVersion", "10.13.2");
-        capabilities.setCapability("deviceName", "mac");
-        capabilities.setCapability("app", "/Applications/Calculator.app");
-        try {
-
-		/* Since we need to connect to Appium-for-Mac, so we need to create an object of AppiumDriver class
-		 * The object will be initialized using above mentioned desired capabilities
-		 * In order to test if Appium server is running/listening on 4622 port, try opening following URL in web browser
-		 */
-			
-			driver = new io.appium.java_client.ios.IOSDriver<IOSElement>(new URL("http://127.0.0.1:4622/wd/hub"), capabilities);	
-			// launch calculator application
-			driver.get("/Applications/Calculator.app");
-			
-		} catch (Exception e) {
-			System.out.println("\n ------- Unable to launch Calculator with Appium");
-        }
     }
 
     @Given("^I have a calculator$")
@@ -79,18 +39,16 @@ public class CalculatorSteps {
     // *******************************************************************************//
     // =======================  Addition scenarios start here ======================= //
     // *******************************************************************************//
-
+    
     @When("^I add (\\d+) and (\\d+)$")
     public void i_add_and(int arg1, int arg2) throws Throwable {
         calculator.Unified_Method((double)arg1, (double)arg2,"+");
       }
 
-    // if second operand is negative
     @When("^I add (\\d+) and -(\\d+)$")
-    public void i_add_second_operand_negative(int arg1, int arg2) throws Throwable {
-    	calculator.Unified_Method((double)arg1, Double.parseDouble("-"+arg2),"+");
-       // throw new PendingException();
-    }
+    public void i_add_numbers_second_negative(int arg1, int arg2) throws Throwable {
+        calculator.Unified_Method((double)arg1, Double.parseDouble("-"+arg2),"+");
+      }    
 
     // if first operand is negative
     @When("^I add -(\\d+) and (\\d+)$")
@@ -340,7 +298,13 @@ public class CalculatorSteps {
     // =======================  Results Assertion =================================== //
     // *******************************************************************************//    
     
-    
+ 
+    // when result is positive value
+    @Then("^the result should be () ->$")
+    public void Examples_based_Expected_result(double result) throws Throwable {
+        assertEquals(result, calculator.getResult(),0.0);
+    }
+ 
     // when result is positive value
     @Then("^the result should be (\\d+)$")
     public void the_result_should_be(double result) throws Throwable {
