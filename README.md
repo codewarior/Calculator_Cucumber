@@ -19,11 +19,11 @@ Table of contents
    * [License](#license)
 <!--te-->
 
-Features
+#Features
 ========
 This project demonstrates the functional verification of basic operations performed by calculator application. The calculator.feature file contains a dataset with 10 rows where values specified under Operand column are used as input parameters for calculator application and then Appiums trigers the code to conduct Addition, Subtraction, Multiplication and Subtraction operations.
 
-Installation
+#Installation
 ============
 In order to run the solution/project, you need to firts complete the installation of following pre-requisites (steps are based on macOS)
 
