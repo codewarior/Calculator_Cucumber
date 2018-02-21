@@ -9,10 +9,6 @@ Table of contents
    * [Installation](#installation)
    * [Folder Structure](#folder-structure)
    * [Usage](#usage)
-      * [Calculator.feature](#Calculator.feature)
-      * [CalculatorSteps.java](#CalculatorSteps.java)
-      * [CalculatorUI.java](#CalculatorUI.java)
-      * [performCalculations(..)](#performCalculations)
    * [Dependency](#dependency)
    * [License](#license)
 <!--te-->
@@ -34,20 +30,18 @@ In order to run the solution/project, you need to firts complete the installatio
 * Install Apache Maven 3.5.2
   * Follow instructions as specified over.  https://maven.apache.org/install.html
 
-* Download Appium for MAC package from https://github.com//appium/appium-for-mac and open the solution in XCode. Build the code and add Appium for MAC under Accessibility section over Security & Privacy settings over MAC.
-![alt tag](https://i.imgur.com/7cI6PxG.png)
-
-
-Note:- In case you need to open the solution in Eclipse, then download Eclipse from  https://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/mars2
-In order to configure cucumber, open Eclipse and select Help -> Install New Software menu option. Type cucumber in work item field and select checkbox against cucumber Eclipse plugin option. Click Next and complete the installation.
+* Download Appium for MAC package from https://github.com//appium/appium-for-mac and open the solution in XCode. Build the code and add Appium for MAC under Accessibility section over Security & Privacy settings over MAC. Then run the Appium for MAC application.
+![alt tag](https://i.imgur.com/7cI6PxG.png).
 
 * Open Teminal and run following commands to get latest copy and execute the tests.
 ```bash
-$ bash-3.2$ git clone https://github.com/codewarior/Calculator_Cucumber
+$ git clone https://github.com/codewarior/Calculator_Cucumber
 $ cd Calculator_Cucumber
 $ cd cucumber-jvm-maven-master\ 2/
 $ mvn test
 ```
+Note:- In case you need to open the solution in Eclipse, then download Eclipse from  https://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/mars2
+In order to configure cucumber, open Eclipse and select Help -> Install New Software menu option. Type cucumber in work item field and select checkbox against cucumber Eclipse plugin option. Click Next and complete the installation.
 
 Folder Structure
 ================
