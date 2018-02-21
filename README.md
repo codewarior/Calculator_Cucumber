@@ -6,17 +6,17 @@ Table of contents
 
 <!--ts-->
    * [Calculator_Cucumber](# Calculator_Cucumber)
-   * [Table of contents](Table of contents)
-   * [Features](features)
-   * [Installation](installation)
-      * [Folder Structure](folder-structure)
-   * [Usage](usage)
-      * [Calculator.feature](Calculator.feature)
-      * [CalculatorSteps.java](CalculatorSteps.java)
-      * [CalculatorUI.java](CalculatorUI.java)
-       * [performCalculations(..)](performCalculations)
-   * [Dependency](dependency)
-   * [License](license)
+   * [Table of contents]#Table-of-contents)
+   * [Features](#features)
+   * [Installation](#installation)
+      * [Folder Structure](#folder-structure)
+   * [Usage](#usage)
+      * [Calculator.feature](#Calculator.feature)
+      * [CalculatorSteps.java](#CalculatorSteps.java)
+      * [CalculatorUI.java](#CalculatorUI.java)
+       * [performCalculations(..)](#performCalculations)
+   * [Dependency](#dependency)
+   * [License](#license)
 <!--te-->
 
 #Features
