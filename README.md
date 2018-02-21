@@ -5,16 +5,14 @@ Table of contents
 =================
 
 <!--ts-->
-   * [Calculator_Cucumber](# Calculator_Cucumber)
-   * [Table of contents](#Table-of-contents)
    * [Features](#features)
    * [Installation](#installation)
-      * [Folder Structure](#folder-structure)
+   * [Folder Structure](#folder-structure)
    * [Usage](#usage)
       * [Calculator.feature](#Calculator.feature)
       * [CalculatorSteps.java](#CalculatorSteps.java)
       * [CalculatorUI.java](#CalculatorUI.java)
-       * [performCalculations(..)](#performCalculations)
+      * [performCalculations(..)](#performCalculations)
    * [Dependency](#dependency)
    * [License](#license)
 <!--te-->
@@ -36,13 +34,14 @@ In order to run the solution/project, you need to firts complete the installatio
 * Install Apache Maven 3.5.2
   * Follow instructions as specified over.  https://maven.apache.org/install.html
 
-* Download Appium for MAC package from https://github.com//appium/appium-for-mac and open the solution in XCode. Build the code and add Appium for MAC under Accessibility section over Security & Privacy settings over MAC. 
-![alt tag](https://www.dropbox.com/home/Public_Shared?preview=Appium+for+mac_Privacy+%26+Security.png)
+* Download Appium for MAC package from https://github.com//appium/appium-for-mac and open the solution in XCode. Build the code and add Appium for MAC under Accessibility section over Security & Privacy settings over MAC.
+![alt tag](https://i.imgur.com/7cI6PxG.png)
 
-Note:- In case you need to open the solution in Eclipse, then download Eclipse from  https://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/mars2
+
+Note:- In case you need to open the solution in Eclipse, then download Eclipse from  https://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/mars2
 In order to configure cucumber, open Eclipse and select Help -> Install New Software menu option. Type cucumber in work item field and select checkbox against cucumber Eclipse plugin option. Click Next and complete the installation.
 
-* Open Teminal and run following commands.
+* Open Teminal and run following commands to get latest copy and execute the tests.
 ```bash
 $ bash-3.2$ git clone https://github.com/codewarior/Calculator_Cucumber
 $ cd Calculator_Cucumber
@@ -53,7 +52,7 @@ $ mvn test
 Folder Structure
 ================
 Once you have got the project, the folder structure will be as shown below.
-![alt tag](https://www.dropbox.com/home/Public_Shared?preview=Screen+Shot+2018-02-21+at+4.26.22+PM.png "Calculator cucumber folder structure")
+![](https://i.imgur.com/cmZxELl.png "Calculator cucumber folder structure")
 
 Usage
 ======
