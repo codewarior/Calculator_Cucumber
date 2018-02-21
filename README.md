@@ -28,7 +28,7 @@ In order to run the solution/project, you need to firts complete the installatio
   * Run echo $JAVA_HOME and path will be something like   /Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home
   
 * Install Apache Maven 3.5.2
-  * Follow instructions as specified over.  https://maven.apache.org/install.html
+  Please follow instructions on how to install & coinfigure it over mac  https://openiam.atlassian.net/wiki/spaces/IAMSUITEV3/pages/524742/Installing+Apache+Maven+on+Mac
 
 * Download Appium for MAC package from https://github.com//appium/appium-for-mac and open the solution in XCode. Build the code and add Appium for MAC under Accessibility section over Security & Privacy settings over MAC. Then run the Appium for MAC application.
 ![alt tag](https://i.imgur.com/7cI6PxG.png).
