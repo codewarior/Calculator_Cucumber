@@ -37,7 +37,7 @@ In order to run the solution/project, you need to firts complete the installatio
   * Follow instructions as specified over.  https://maven.apache.org/install.html
 
 * Download Appium for MAC package from https://github.com//appium/appium-for-mac and open the solution in XCode. Build the code and add Appium for MAC under Accessibility section over Security & Privacy settings over MAC. 
-![alt tag](https://www.dropbox.com/s/nbgmoopkg31awle/Appium%20for%20mac_Privacy%20%26%20Security.png?dl=0)
+![alt tag](https://www.dropbox.com/home/Public_Shared?preview=Appium+for+mac_Privacy+%26+Security.png)
 
 Note:- In case you need to open the solution in Eclipse, then download Eclipse from  https://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/mars2
 In order to configure cucumber, open Eclipse and select Help -> Install New Software menu option. Type cucumber in work item field and select checkbox against cucumber Eclipse plugin option. Click Next and complete the installation.
@@ -53,7 +53,7 @@ $ mvn test
 Folder Structure
 ================
 Once you have got the project, the folder structure will be as shown below.
-![alt tag](https://www.dropbox.com/s/xic1ksn6mg7guzm/Screen%20Shot%202018-02-21%20at%204.26.22%20PM.png?dl=0 "Calculator cucumber folder")
+![alt tag](https://www.dropbox.com/home/Public_Shared?preview=Screen+Shot+2018-02-21+at+4.26.22+PM.png "Calculator cucumber folder structure")
 
 Usage
 ======
