@@ -40,8 +40,8 @@ $ cd Calculator_Cucumber
 $ cd cucumber-jvm-maven-master\ 2/
 $ mvn test
 ```
-Note:- In case you need to open the solution in Eclipse, then download Eclipse from  https://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/mars2
-In order to configure cucumber, open Eclipse and select Help -> Install New Software menu option. Type cucumber in work item field and select checkbox against cucumber Eclipse plugin option. Click Next and complete the installation.
+Note:- In case you need to open the solution in Eclipse, then download Eclipse from  https://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/mars2 and for quick understanding of Gherkin systax, install Cucumber Eclipse plugin. For further details, please visit http://toolsqa.com/cucumber/install-cucumber-eclipse-plugin/
+
 
 Folder Structure
 ================
