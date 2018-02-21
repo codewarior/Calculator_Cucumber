@@ -3,7 +3,7 @@ Feature: Calculator
 	I want to use a calculator application
  	So that I don't need to perform calculations myself
 
-Scenario Outline: Add two numbers 
+Scenario Outline: Perform operations using two numbers 
 	Given I have a calculator 
 	When I add "<operand1>" and "<operand2>" 
 	Then the result should be "<sumResult>" 
@@ -13,7 +13,7 @@ Scenario Outline: Add two numbers
 	Then the result should be "<mulResult>" 
 	When I Divide "<operand1>" by "<operand2>" 
 	Then the result should be "<divResult>" 
-Examples: Data set for Addition scenarios 
+Examples: Data set for all scenarios 
 		| operand1 	| operand2 	| sumResult	|	subResult	|	mulResult	|	divResult	|
 		|	12		|	5		|	17		|	7			|	60			|	2.4			|
 		|	2		|	-7		|	-5		|	9			|	-14			|	-0.29		|
