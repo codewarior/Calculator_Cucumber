@@ -60,7 +60,7 @@ Note:- In case you need to open the solution in Eclipse, then [download Eclipse 
 
 Execution Report
 ================
-The Maven will download required packages and test will be executed. After the completion of test, a report named *index.html* under cucumber-html-report inside target directory. The report will show summary of test execution and details regarding the scearnios executed. The sample report can be download from [this link](https://).
+The Maven will download required packages and test will be executed. After the completion of test, a report named *index.html* under cucumber-html-report inside target directory. The report will show summary of test execution and details regarding the scearnios executed. The sample report can be download from [this link](https://www.dropbox.com/s/8hnhj2cgh87yhoo/cucumber-html-report.zip?dl=0).
 ![alt tag](https://i.imgur.com/sVOeppI.png).
 
 Specified below is preview of report displayed in chrome browser.
