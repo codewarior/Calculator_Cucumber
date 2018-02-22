@@ -7,6 +7,7 @@ Table of contents
 <!--ts-->
    * [Features](#features)
    * [Installation](#installation)
+   * [Execution Report](#execution-report)
    * [Folder Structure](#folder-structure)
    * [Usage](#usage)
    * [Dependency](#dependency)
@@ -57,6 +58,13 @@ $ mvn test
 ```
 Note:- In case you need to open the solution in Eclipse, then [download Eclipse IDE]( https://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/mars2) and for quick understanding of Gherkin systax, install Cucumber Eclipse plugin. Please visit the folllowing link for further details on [installing cucumber eclipse plugin]( http://toolsqa.com/cucumber/install-cucumber-eclipse-plugin/).
 
+Execution Report
+================
+The Maven will download required packages and test will be executed. After the completion of test, a report named *index.html* under cucumber-html-report inside target directory. The report will show summary of test execution and details regarding the scearnios executed. The sample report can be download from [this link](https://).
+![alt tag](https://i.imgur.com/sVOeppI.png).
+
+Specified below is preview of report displayed in chrome browser.
+![alt tag](https://i.imgur.com/MxjKkBJ.png).
 
 Folder Structure
 ================
