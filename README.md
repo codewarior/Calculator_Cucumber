@@ -43,7 +43,7 @@ In order to run the solution/project, you need to firts complete the installatio
   /Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home
   ```
 * Install Apache Maven 3.5.2.
-  Please follow instructions on [how to install & coinfigure Maven on mac](  https://openiam.atlassian.net/wiki/spaces/IAMSUITEV3/pages/524742/Installing+Apache+Maven+on+Mac)
+  Please follow instructions on [how to install & coinfigure Maven on mac](  https://openiam.atlassian.net/wiki/spaces/IAMSUITEV3/pages/524742/Installing+Apache+Maven+on+Mac).
 
 * Download [Appium for MAC](https://www.dropbox.com/s/uhtnp3g23mxp5rs/AppiumForMac.app.zip?dl=0) application or you can even download [Appium for MAC sourcecode/project](https://github.com//appium/appium-for-mac) and open the solution in XCode. Build the code and add Appium for MAC under Accessibility section over Security & Privacy settings over MAC. Then run the Appium for MAC application.
 ![alt tag](https://i.imgur.com/7cI6PxG.png).
@@ -55,7 +55,7 @@ $ cd Calculator_Cucumber
 $ cd cucumber-jvm-maven-master\ 2/
 $ mvn test
 ```
-Note:- In case you need to open the solution in Eclipse, then [download Eclipse IDE]( https://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/mars2) and for quick understanding of Gherkin systax, install Cucumber Eclipse plugin. Please visit the folllowing link for further details on [installing cucumber eclipse plugin]( http://toolsqa.com/cucumber/install-cucumber-eclipse-plugin/)
+Note:- In case you need to open the solution in Eclipse, then [download Eclipse IDE]( https://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/mars2) and for quick understanding of Gherkin systax, install Cucumber Eclipse plugin. Please visit the folllowing link for further details on [installing cucumber eclipse plugin]( http://toolsqa.com/cucumber/install-cucumber-eclipse-plugin/).
 
 
 Folder Structure
