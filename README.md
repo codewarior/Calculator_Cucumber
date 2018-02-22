@@ -25,7 +25,7 @@ In order to run the solution/project, you need to firts complete the installatio
   * Get JDK1.8 from  http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
   * Download .dmg file and complete the installation process
   * Set JAVA_HOME in .bash_profile   i.e.  export JAVA_HOME=$(/usr/libexec/java_home)
-  * Run echo $JAVA_HOME and path will be something like   /Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home
+  * Run echo $JAVA_HOME and path will be something like   /Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home
   
 * Install Apache Maven 3.5.2
   Please follow instructions on how to install & coinfigure it over mac  https://openiam.atlassian.net/wiki/spaces/IAMSUITEV3/pages/524742/Installing+Apache+Maven+on+Mac
