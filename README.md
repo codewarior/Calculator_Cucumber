@@ -7,9 +7,9 @@ Table of contents
 <!--ts-->
    * [Features](#features)
    * [Installation](#installation)
-   * [Execution Report](#execution-report)
    * [Folder Structure](#folder-structure)
-   * [Usage](#usage)
+   * [Execution Report](#execution-report)
+   * [Project Structure](#project-structure)
    * [Dependency](#dependency)
    * [License](#license)
 <!--te-->
@@ -58,6 +58,11 @@ $ mvn test
 ```
 Note:- In case you need to open the solution in Eclipse, then [download Eclipse IDE]( https://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/mars2) and for quick understanding of Gherkin systax, install Cucumber Eclipse plugin. Please visit the folllowing link for further details on [installing cucumber eclipse plugin]( http://toolsqa.com/cucumber/install-cucumber-eclipse-plugin/).
 
+Folder Structure
+================
+Once you have got the project, the folder structure will be as shown below.
+![](https://i.imgur.com/cmZxELl.png "Calculator cucumber folder structure")
+
 Execution Report
 ================
 The Maven will download required packages and test will be executed. After the completion of test, a report named *index.html* under cucumber-html-report inside target directory. The report will show summary of test execution and details regarding the scearnios executed. The sample report can be download from [this link](https://www.dropbox.com/s/8hnhj2cgh87yhoo/cucumber-html-report.zip?dl=0).
@@ -66,13 +71,8 @@ The Maven will download required packages and test will be executed. After the c
 Specified below is preview of report displayed in chrome browser.
 ![alt tag](https://i.imgur.com/MxjKkBJ.png).
 
-Folder Structure
-================
-Once you have got the project, the folder structure will be as shown below.
-![](https://i.imgur.com/cmZxELl.png "Calculator cucumber folder structure")
-
-Usage
-======
+Project Structure
+=================
 * Calculator.feature :- This file contains the sceanrio details and Examples data which is passed as argument to each parameter in scenario steps. You may update the file to test the application with new dataset.
 * CalculatorSteps.java :- This file contains definition for individual step specified in features file. It also contains methods for @Before, @Given, @When and @Then keywords. The setU() method in this class creates an instance of Calculator.java class.
 * Calculator.java :- This class creates AppiumDriver object and initializes it with DesiredCapabilities. After initialization, it launches the Calculator application and passes driver object to CalculatorUI class.
