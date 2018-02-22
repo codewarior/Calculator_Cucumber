@@ -1,5 +1,5 @@
 # Calculator_Cucumber
-A project to perform functional regression testing of native Calculator application over MAC OS. The test is based on Cucumber framework and it is executed using Appium for MAC. The project is based on Maven and all required dependencies (defined in pom.xml) will be automatically loaded in project.
+A project to perform functional regression testing of native Calculator application over MAC OS. The test is based on Cucumber framework and it is executed using Appium for MAC. The project is based on Maven and all required dependencies are(defined in pom.xml) and they will be automatically loaded.
 
 Table of contents
 =================
@@ -73,16 +73,16 @@ Specified below is preview of report displayed in chrome browser.
 
 Project Structure
 =================
-* Calculator.feature :- This file contains the sceanrio details and Examples data which is passed as argument to each parameter in scenario steps. You may update the file to test the application with new dataset.
-* CalculatorSteps.java :- This file contains definition for individual step specified in features file. It also contains methods for @Before, @Given, @When and @Then keywords. The setU() method in this class creates an instance of Calculator.java class.
-* Calculator.java :- This class creates AppiumDriver object and initializes it with DesiredCapabilities. After initialization, it launches the Calculator application and passes driver object to CalculatorUI class.
-* CalculatorUI.java :- This class handles the main calculation operations.
+* **Calculator.feature:-** This file contains the sceanrio details and Examples data which is passed as argument to each parameter in scenario steps. You may update the file to test the application with new dataset.
+* **CalculatorSteps.java:-** This file contains definition for individual step specified in features file. It also contains methods for @Before, @Given, @When and @Then keywords. The setU() method in this class creates an instance of Calculator.java class.
+* **Calculator.java:-** This class creates AppiumDriver object and initializes it with DesiredCapabilities. After initialization, it launches the Calculator application and passes driver object to CalculatorUI class.
+* **CalculatorUI.java:-** This class handles the main calculation operations.
   * performCalculations(...) - It is a core method to perform all arithmetic operations (+, -, *, /). 
   * enterOperandValue(...) - This method initiates the click method to input operand value.
   * clickButton(...) - This method takes string as identifier and based on this value, performs click operation on button.
   * getButtonLabel(...) - This method returns the actual lable as per XPath of control on Calculator application.
   * getResult(..) - This method returns the result being displayed over calculator.
-* RunCalculatorTest.java - This class executes the cucummber scenarios and generates resultant report.
+* **RunCalculatorTest.java:-** This class executes the cucummber scenarios and generates resultant report.
 
 Dependency
 ==========
@@ -90,7 +90,7 @@ Dependency
 * Appium for Mac
 * Apache Maven
 
-Tested on macOS High Sierra 10.13.2, JDK 1.8.0_161-b12, Apache Maven 3.5.2
+Tested on `macOS High Sierra 10.13.2`, `JDK 1.8.0_161-b12`, `Apache Maven 3.5.2`
 
 License
 =======
