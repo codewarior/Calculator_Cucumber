@@ -1,5 +1,5 @@
 # Calculator_Cucumber
-A project to perform functional regression testing of native Calculator application over MAC OS. The test is based on Cucumber framework and it is executed using Appium for MAC. The project is based on Maven and all required dependencies are(defined in pom.xml) and they will be automatically loaded.
+A project to perform functional regression testing of native Calculator application over MAC OS X. The test is based on Cucumber framework and it is executed using Appium for MAC. The project is based on Maven and all required dependencies are(defined in pom.xml) and they will be automatically loaded.
 
 Table of contents
 =================
